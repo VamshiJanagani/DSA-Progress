@@ -1,3 +1,4 @@
+//Factorial of a number 
 //Input: n = 2, Output: 2
 //input n=0, output= 1
 //input n=3 , output= 6
