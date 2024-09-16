@@ -1,15 +1,13 @@
 //Input: n1 = 4, n2 = 6
-//Output: 2
-//Explanation: Divisors of n1 = 1, 2, 4, Divisors of n2 = 1, 2, 3, 6
-//Greatest Common divisor = 2.
+//Output: 12
+//Explanation: 4 * 3 = 12, 6 * 2 = 12.
+//12 is the lowest integer that is divisible both 4 and 6.
 
-
-//Efficient euclidean algo
 #include<bits/stdc++.h>
 using namespace std;
 
 class Solution{
-    public:
+    private:
     int Gcd(int n1,int n2){
         while(n1 !=0 && n2!=0){
             if(n1>n2){
@@ -22,13 +20,18 @@ class Solution{
         if(n1==0) return n2;
         return n1;
     }
+    public:
+    int lcm(int n1,int n2){
+        int lcm=(n1*n2)/gcd(n1,n2);
+        return lcm;
+    }
 };
 
 
 int main(){
-    int n1=6, n2=12;
+    int n1=4, n2=12;
     Solution sol;
-    int ans=sol.Gcd(n1,n2);
-    cout<<"GCD of "<<n1<<" and "<<n2<<" is "<<ans;
+    int ans=sol.lcm(n1,n2);
+    cout<<"LCM of "<<n1<<" and "<<n2<<" is "<<ans;
     return 0;
 }
