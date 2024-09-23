@@ -32,8 +32,8 @@ class Solution{
 
 int main(){
     Solution sol;
-    string s="apple";
-    string t="bbnbm";
+    string s="paper";
+    string t="title";
     bool ans=sol.isomorphic(s,t);
     if(ans){
         cout<<"They both are isomorphic";
