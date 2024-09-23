@@ -24,7 +24,7 @@ class Solution{
 
 
 int main(){
-    string s = "hanna";  
+    string s = "aabbccbbaa";  
     Solution sol;
     bool ans=sol.isPalindrome(s);
     if(ans){
