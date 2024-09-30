@@ -23,7 +23,7 @@ class Solution{
 
 
 int main(){
-    string s="hannah";
+    string s="aabbcccdbbaa";
     Solution sol;
     bool ans=sol.palindromeCheck(s);
     if(ans){
