@@ -20,7 +20,7 @@ class Solution{
 
 int main(){
     Solution sol;
-    int num=15;
+    int num=41;
     bool ans=sol.checkPrime(num);
     if(ans){
         cout<<num<<" is a prime number";
