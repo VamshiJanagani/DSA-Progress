@@ -1,7 +1,7 @@
 //Input: nums = [2, 3, 5, -2, 7, -4]
 //Output: 15
 //Explanation: The subarray from index 0 to index 4 has the largest sum = 15
-
+//This kadane's algorithm works only if the output should be greater than 0(or only positives)
 #include<bits/stdc++.h>
 using namespace std;
 
